@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HAssan Rehman-vCard</title>
+  <title>Hassan Rehman-vCard</title>
   <!-- Add Bootstrap CSS link -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
@@ -13,15 +13,17 @@
       color: #fff;
       font-family: "Courier New", monospace;
     }
+    img.wide {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
     .center {
-        margin: 0 auto;
-        height: 900px;
-        width: 41%;
+        
+        width: 507px;
         border: white 5px solid;
-        background-image:url("./files/background.png");
-        background-repeat: no-repeat, no-repeat;
-        background-size: 100%;
         background-color: #333130;
+
     }
     div.absolute {
         position: relative;
@@ -31,6 +33,10 @@
         height: 450px;
         
     }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        }
     a:link {
         color: #FCD053;
         text-decoration: none;
@@ -43,9 +49,53 @@
 </head>
 <body>
   <div class="container center">
-    <div class="container absolute">
+   
+        <div class="row">
+          <div class="col-sm-12">
+            <img src="files/background.png" style="margin-left: -16px;"/>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <center><h1 class="text" style="font-size:3vw;">Hassan Rehman</h1></center>
+                <center><h1 class="text" style="font-size:1vw;">Lead AI Engineer @ NXB</h1></center>
+                <center><h1 class="text" style="font-size:1vw;">"Nothing is constant, except change."</h1></center>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+                <h5 style="font-size:1vw;"><b>About:</b> <br>
+                    I automate boring stuff.<br>
+                    I am an AI Engineer, programmer, nomad and researcher.
+                </h5>
+                <h5 style="font-size:1vw;"><b>DOB:</b> 11-Sept-1995</h5>
+                <h5 style="font-size:1vw;"><b>Qualification:</b>
+                    <ul>
+                        <li>
+                            MS in Data Science
+                        </li>
+                        <li>
+                            BS in Computer Science
+                        </li>
+                    </ul>
+                </h5>
+                <h5 style="font-size:1vw;"><b>Mobile No:</b> +923216800811 <a href="https://wa.me/923216800811">Call Me</a></h5>
+                <h5 style="font-size:1vw;"><b>Email:</b> rehmanhassan.ai@gmail.com <a href="mailto:rehmanhassan.ai@gmail.com">Mail Me</a></h5>
+                <h5 style="font-size:1vw;"><b>Hometown:</b> Bahawalpur, Pakistan</h5>
+                <h5 style="font-size:1vw;"><b>Current Location:</b> Lahore, Pakistan</h5>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top:20px;background-color:  #FCD053;">
+            <div class="col-sm-12">
+                <center><button type="button" onclick="window.location.href='files/hassanrehman.vcf'" class="btn">Download VCard</button></center>
+            </div>
+          </div>
+     
+    <!-- <div class="container absolute">
         <div class="container">
-            <center><h1 class="text">Hassan Rehman</h1></center>
+            <center><h1 style="font-size:5vw;">Hassan Rehman</h1></center>
             <center><h5 class="text">Lead AI Engineer</h5></center>
             <div style="margin-top: 40px;">
                 <h5>DOB: 11-Sept-1995</h5>
@@ -70,7 +120,7 @@
             
            
             
-        </div>
+        </div> -->
     </div>
     
   </div>
